@@ -1,0 +1,1 @@
+from .aer_calculator import calculate_interest_for_periods
