@@ -24,6 +24,10 @@ def calculate_and_update_ui():
 
 
 st.title("AER calculator")
+st.sidebar.info("""
+These calculators are made for testing purposes only.
+Use with caution.
+""")
 # --- Clear Session Button ---
 if st.button("Clear Inputs"):
     clear_session()
@@ -40,7 +44,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.subheader("Input")
     st.number_input("Amount", step=100,key="amount")
-    st.number_input("Interest", step=0.01, key="interest")
+    st.number_input("Interest", step=0.05, key="interest")
 
 
 with col2:
